@@ -99,16 +99,17 @@ const StartScreen = ({ onStartGame, onOpenLevels, onOpenPlayerSetup, playerName 
       {/* ========================================================================= */}
       {/* 2. TOP UTILITIES: BRAND LOGO (LEFT) & SOUND / FULLSCREEN (RIGHT)          */}
       {/* ========================================================================= */}
-      <header className="absolute top-0 left-0 right-0 z-30 px-4 sm:px-8 pt-4 sm:pt-6 flex items-center justify-between pointer-events-none">
-        
-        {/* Top-Left: Nebuloid Tech Logo Badge */}
-        <div className="pointer-events-auto flex items-center gap-2 backdrop-blur-md px-2 py-1.5 rounded-md">
+      
+      {/* Top-Left: Nebuloid Tech Logo Badge */}
+        <div className="absolute top-0 px-2 py-1.5">
           <img
             src={nebuloidMark}
             alt="Nebuloid Tech"
-            className="h-14 w-auto object-contain group-hover:scale-110 transition-transform"
+            className="h-16 w-auto object-contain group-hover:scale-110 transition-transform"
           />
         </div>
+
+      <header className="absolute top-0 right-0 z-30 px-4 sm:px-8 pt-4 sm:pt-6 flex items-center justify-between pointer-events-none">
 
         {/* Top-Right: Sound & Fullscreen Controls */}
         <div className="pointer-events-auto flex items-center gap-2 sm:gap-2.5">

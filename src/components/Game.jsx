@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import bgImg from '../assets/bg-img.png';
-import nebuloidLogo from '../assets/nebuloid-logo.png';
+import nebuloidLogo from '../assets/logo_white_vertical.png';
 import NavalMine from './NavalMine';
 import { FlagIcon } from './IsometricBoard';
 import { SettingsModal, LeaderboardModal } from './Modals';
@@ -493,12 +493,12 @@ const Game = ({ onBack, levelConfig, playerName = '' }) => {
       <div className="absolute inset-0 bg-black/10 pointer-events-none z-0" />
 
       {/* Centered Nebuloid Tech Logo */}
-      <div className="relative z-30 w-full flex items-center justify-center pt-0.5 pointer-events-none">
+      <div className="absolute top-2 left-2">
         <div className="pointer-events-auto flex items-center">
           <img
             src={nebuloidLogo}
             alt="Nebuloid Tech"
-            className="h-15 mb-2 w-auto object-contain"
+            className="h-40 w-auto object-contain"
           />
         </div>
       </div>
